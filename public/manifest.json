@@ -1,33 +1,14 @@
 {
   "manifest_version": 3,
-  "name": "Enrollhelper",
-  "version": "0.1.0",
-  "description": "My Chrome Extension",
-  "icons": {
-    "16": "icons/icon_16.png",
-    "32": "icons/icon_32.png",
-    "48": "icons/icon_48.png",
-    "128": "icons/icon_128.png"
-  },
-  "background": {
-    "service_worker": "background.js"
-  },
-  "action": {
-    "default_title": "Enrollhelper",
-    "default_popup": "popup.html"
-  },
-  "permissions": [
-    "storage"
-  ],
+  "name": "ZotHelp",
+  "version": "1.0",
+  "description": "Make Enrollment and Course Planning Easier",
   "content_scripts": [
-    {
-      "matches": [
-        "<all_urls>"
-      ],
-      "run_at": "document_idle",
-      "js": [
-        "contentScript.js"
-      ]
-    }
-  ]
+      {
+        "js": ["content.js"],
+        "matches": [
+          "https://www.reg.uci.edu/access/student/studylist/*"
+        ]
+      }
+    ]
 }
