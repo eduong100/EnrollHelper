@@ -9,8 +9,8 @@ export const convertTime12to24 = (timeList) => {
   if (hour2 < hour1) {
     hour2 += 12;
   } else {
-    if (modifier === 'PM') {
-      if (hour2 < 12) hour2 += 12;
+    if (modifier === 'PM' && hour2 !== 12) {
+      hour2 += 12;
       if (hour1 < 12) hour1 += 12;
     }
   }
