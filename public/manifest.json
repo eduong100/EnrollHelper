@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "ZotHelp",
+  "name": "UCI StudyList Calendar",
   "version": "1.0",
-  "description": "Make Enrollment and Course Planning Easier",
+  "description": "Make Enrollment and Course Planning Easier. 'image: Freepik.com'. The icon image has been designed using assets from Freepik.com",
   "content_scripts": [
       {
         "js": ["content.js"],
@@ -10,5 +10,9 @@
           "https://www.reg.uci.edu/access/student/studylist/*"
         ]
       }
-    ]
+    ],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
 }
